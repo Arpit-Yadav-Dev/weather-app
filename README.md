@@ -11,6 +11,8 @@ A responsive weather forecast application that provides current weather conditio
 - **Offline Detection**: Automatically detects when there is no internet connection and displays a message to inform the user.
 - **Responsive Design**: Optimized for both desktop and mobile devices.
 - **Temperature Unit Toggle**: Switch between Celsius and Fahrenheit.
+- **City Search**:Allows searching for weather in select cities.
+- **Local Storage**: Saves the last searched city for quick access later.
 
 ## Technologies Used
 
@@ -19,12 +21,14 @@ A responsive weather forecast application that provides current weather conditio
 - **CSS3**: Styling and responsiveness.
 
 ## City Search Functionality
+
 The weather forecast application currently supports a limited number of cities for searching. The available cities are hardcoded, including options like New York, Los Angeles, Chicago, San Francisco, and Boston.
 
-This is a known limitation, and if users attempt to search for cities outside of this list, they will not be able to retrieve weather data for those cities. Future improvements could involve implementing a dynamic search feature that fetches cities from an API in real-time.
+This is a known limitation, and if users attempt to search for cities outside of this list, they will not be able to retrieve weather data for those cities. Future improvements could involve implementing a dynamic search feature that fetches cities from an API in real-time (Due to time issue).
 
 ## Installation and Setup
 
 1. Clone the repository:
    ```bash
    git clone https://github.com/Arpit-Yadav-Dev/weather-app.git
+   ```
