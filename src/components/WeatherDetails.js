@@ -19,19 +19,26 @@ function WeatherDetails({ city, unit }) {
   }, [city, unit]);
 
   if (error) return <div>{error}</div>;
-  if (!weatherData) return <div>Loading...</div>;
+  if (!weatherData)
+    return (
+      <img src="https://shortpixel.com/img/spinner2.gif" />
+    );
 
   const { name, main, weather } = weatherData;
   const temp = Math.round(main.temp);
   const condition = weather[0].description;
   const icon = `http://openweathermap.org/img/wn/${weather[0].icon}.png`;
-  const unitSymbol = unit === 'metric' ? '°C' : '°F';
+  const unitSymbol = unit === "metric" ? "°C" : "°F";
 
   return (
     <div className="weather-details">
       <div>
         <h2>{name}</h2>
-        <h1> {temp}{unitSymbol}</h1>
+        <h1>
+          {" "}
+          {temp}
+          {unitSymbol}
+        </h1>
         <p> {condition}</p>
         <img src={icon} alt="weather icon" />
       </div>
