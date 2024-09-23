@@ -29,6 +29,27 @@ This is a known limitation, and if users attempt to search for cities outside of
 ## Installation and Setup
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/Arpit-Yadav-Dev/weather-app.git
    ```
+
+2. Navigate into the project directory
+
+   ```bash
+   cd weather-app
+   ```
+
+3. Install the required dependencies
+
+   ```bash
+   npm install
+   ```
+
+4. Start the development server
+
+   ```bash
+   npm start
+   ```
+
+# The app will now run on http://localhost:3000
